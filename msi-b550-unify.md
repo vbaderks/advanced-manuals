@@ -32,6 +32,11 @@ Info Block effect [Unlock]
 
 POST Beep [Disabled]
 
+#### Settings\System Status
+
+This page provides an overview of detected components and the CPU
+It does not provide configuration items.
+
 #### Settings\Advanced Wake Up Event Setup
 
 Wake Up Event By [BIOS - OS]
@@ -70,6 +75,36 @@ ACPI = Advanced Configuration and Power Interface
 
 PBO Limits [Auto]
 
+#### Settings\Advanced\Integrated Peripherals
+
+|Name|Default|Options|Description|
+|---|---|---|---|
+|VGA Detection|Auto|Auto, Ignore|This controls of the BIOS tries to detect a discrete video card.|
+|Onboard Lan Controller|
+|LAN Option ROM|
+|Network stack|
+|SATA Mode|AHCI Mode|AHCI Mode, RAID Mode|
+|SATA1 Hot Plug|Disabled|Disabled, Enabled|
+|SATA2 Hot Plug|Disabled|Disabled, Enabled|
+|SATA3 Hot Plug|Disabled|Disabled, Enabled|
+|SATA4 Hot Plug|Disabled|Disabled, Enabled|
+|SATA5 Hot Plug|Disabled|Disabled, Enabled|
+|SATA6 Hot Plug|Disabled|Disabled, Enabled|
+|HD Audio Controller|
+
+#### Settings\Advanced\PCI Subsystems Settings
+
+|Name|Default|Options|Description|
+|---|---|---|---|
+|Re-Size BAR Support|Disabled|
+|Above 4G memory/Crypto Currency mining|Disabled|
+
+#### Overclocking\CPU Specifications
+
+This page provides information about the installed CPU.
+Most of the information can also be retrieved using tools like HWiNFO.
+There are no configurable options in this page.
+
 #### Overclocking\Advanced CPU Configuration
 
 AMD Overclocking
@@ -92,7 +127,6 @@ Motherboard = PPT=500W, TDC=245A, EDC 220A
 AMD CBS
 
 This will open the AMD CBS screen (CBS = Common BIOS Settings)
-
 
 SVM Mode
 
@@ -151,3 +185,8 @@ XHCI Mode is Enabled - The on-board USB 3.0 port function like a 3.0 port
 
 For reference: http://answers.microsoft.com/en-us/...hand-off/edff12b1-b38c-4e16-8149-8441032b6771
 
+Resizable Base Address Register
+=> Allows better access to VRAM instead in 256MB chunks. Can have up to 10% more performance in viedeo games.
+
+Above 4GB decoding
+=> Allows PCI devices to be mapped above 4GB. Required for Resizable BAR. Requires a 64-bit OS.
