@@ -1,5 +1,13 @@
 # MSI B550 Unify Advanced Manual
 
+## Introduction
+
+This manual describes the MSI B550 Unify motherboard. This motherboard comes with a manual 
+and online help in the BIOS. There is still a lot of information missing.
+
+Latest BIOS version: 7D13v15 (AMD ComboAm4v2PI 1.2.0.6c), 2022-3-21
+Latest Manual version: v1.3, 2022-3
+
 ## Temperature sensors
 
 - CPU (called CPU Core in Hardware Monitor)
@@ -12,6 +20,14 @@
 ## BIOS
 
 The MSI B550 Unify comes with click bios 5
+
+### Settings not enabled by default
+
+XMP: not enabled by default to ensure stable but also slow memory settings. Recommended to enable it.
+Secure Boot: not enabled by default. Recommendation is to enable this when using Windows 11.
+SVM Mode (Secure Virtual Mode): not enabled by default. See SVM section how and when to enable this setting.
+Re-Size Bar: not enabled by default.
+Above 4G: not enabled by default.
 
 ### EZ Mode
 
@@ -115,7 +131,7 @@ PBO Limits [Auto]
 |---|---|---|---|
 |AMD Overclocking (sub menu)|
 |AMD CBS (sub menu)|
-|SVM Mode|Disabled|Disabled, Enabled|Enables/disables CPU virtualization suppport. SVM stands for Secure Virtual Machine and it the same option as Intel VT-x. It will enable additional CPU instructions (VMRUN, VMLOAD, VMSAVE, CLGI, VMMCALL, INVLPGA, SKINIT, and STGI) to provide hardware assisted virtualization. When this option is enabled Windows will activated additional security features like Core isolation. It is required to use WSL version 2 in Windows 11.It is by default disabled, because the additional security features of Windows 10 may have a (mininal) impact on performance benchmarks.|
+|SVM Mode|Disabled|Disabled, Enabled|Enables/disables CPU virtualization suppport. SVM stands for Secure Virtual Machine and it the same option as Intel VT-x. It will enable additional CPU instructions (VMRUN, VMLOAD, VMSAVE, CLGI, VMMCALL, INVLPGA, SKINIT, and STGI) to provide hardware assisted virtualization. When this option is enabled Windows will activated additional security features like Core isolation. It is required to use WSL version 2 in Windows 11.It is by default disabled, because the additional security features of Windows 11 may have a (mininal) impact on performance benchmarks.|
 |NX Mode|
 |PSS Support
 |Performance Regulator|Disabled|Disabled, Cinebench R15, Cinebench R11.5, GeekBench, AIDA64 Memory, LN2 Mode||
