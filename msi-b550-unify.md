@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This manual describes the MSI B550 Unify motherboard. This motherboard comes with a manual 
+This manual describes the MSI B550 Unify motherboard. This motherboard comes with a manual
 and online help in the BIOS. There is still a lot of information missing.
 
 Latest BIOS version: 7D13v15 (AMD ComboAm4v2PI 1.2.0.6c), 2022-3-21
@@ -23,11 +23,18 @@ The MSI B550 Unify comes with click bios 5
 
 ### Settings not enabled by default
 
-XMP: not enabled by default to ensure stable but also slow memory settings. Recommended to enable it.
-Secure Boot: not enabled by default. Recommendation is to enable this when using Windows 11.
-SVM Mode (Secure Virtual Mode): not enabled by default. See SVM section how and when to enable this setting.
-Re-Size Bar: not enabled by default.
-Above 4G: not enabled by default.
+The following settings are not enabled by default. In general most of these
+settings are disabled to ensure a configuration that can boot.
+
+|Name       |Default |
+|-----------|--------|
+|A-XMP      |Disabled|
+|Secure Boot|Disabled|
+|SVM Mode (Secure Virtual Mode)|Disabled|
+|Re-Size BAR support|Disabled|
+|Above 4G memory|Disabled|
+|SR-IOV Support|Disabled|
+|Data Link Feature Exchange|Disabled|
 
 ### EZ Mode
 
@@ -114,6 +121,12 @@ PBO Limits [Auto]
 |---|---|---|---|
 |Re-Size BAR Support|Disabled|
 |Above 4G memory/Crypto Currency mining|Disabled|
+|PCI_E1 Gen Switch|Auto|
+|Chipset Gen Switch|Auto|
+|PCI_E1 Lanes Configuration|Auto|
+|M2_2/M2_3 Lanes Source|Chipset|
+|SR-IOV Support|Disabled|Disabled, Enabled|The SR-IOV (Single Root I/O Virtualization) interface is an extension to the PCI express (PCIe) specification. It enables the BIOS to allocate more PCI resources to PCIe devices. Allows better performance for virtualized PCIe hardware.|
+|Data Link Feature Exchange|Disabled|Disabled, Enabled|PCIe 4.0.7 feature to improve bandwidth (for PCIe device that support it).|
 
 #### Overclocking
 
