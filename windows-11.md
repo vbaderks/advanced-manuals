@@ -20,17 +20,31 @@ is easier to maintain and more secure.
 - Purpose: .NET Framework is a framework to execute application build for .NET 3.5 and older.
 - Advice: Keep it disabled. This is only needed to run legacy .NET applications. Windows will install it when it needs it.
 
+### .NET 4.8 Advanced Services
+
+ => Needed to run server like .NET applications
+
 ### Active Lightweight Directory Services
 
 Default: not installed.
 
-### Device Lockdown
-
-- Purpose: TODO
-
 ### Containers
 
 Default: not installed.
+
+### Data Center Bridging
+
+- Purpose: TODO
+
+### Device Lockdown
+
+Additional options to lockdown a Windows installation.
+
+### Guarded Host
+
+Guarded Hosts are Hyper-V hosts that can run Shielded VMs (encrypted VMs). It will run a windows service called Host Guardian Service (HGS).
+This service will validate the host and communicate with the Guarded Fabric server to get the keys to run the encrypted VMs.
+Typical use case is to run VMs in goverment and financial institutions.
 
 ### Hyper-V
 
@@ -65,3 +79,22 @@ big impact on your Windows installation.
 ### Windows Subsystem for Linux
 
 - Default: not installed.
+
+### Legacy Components
+
+- DirectPlay: deprecated (since Windows Vista) API for multiplayer network games. Instal it to play legacy games that need it.
+
+Media Features
+ => Windows Media Player
+
+Microsoft Print to PDF
+
+Microsoft XPS Document Writer
+
+### SMB Direct
+
+### Telnet Client
+
+### Windows Projected File System
+
+Needed to 
